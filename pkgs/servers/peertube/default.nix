@@ -191,8 +191,8 @@ stdenv.mkDerivation rec {
       --exec brotli --best -f {} -o {}.br
 
     # fix yarn
-    echo 'cacheFolder: "/tuba/cache/yarn"' > $out/.yarnrc
-    chmod 644 $out/.yarnrc
+    echo 'cacheFolder: "/tuba/cache/yarn"' > $out/.yarnrc.yml
+    chmod 644 $out/.yarnrc.yml
   '';
 
   passthru.tests.peertube = nixosTests.peertube;
