@@ -167,6 +167,7 @@ stdenv.mkDerivation rec {
     mv ~/packages/transcription/{dist,package.json} $out/packages/transcription
     mv ~/packages/typescript-utils/{dist,package.json} $out/packages/typescript-utils
     mv ~/{config,support,CREDITS.md,FAQ.md,LICENSE,README.md,package.json,yarn.lock} $out
+    echo 'cacheFolder: "/tuba/cache/yarn"' > $out/.yarnrc
 
     # Remove broken symlinks in node_modules from workspace packages that aren't needed
     # by the built artifact. If any new packages break the check for broken symlinks,
