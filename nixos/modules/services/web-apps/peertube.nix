@@ -22,17 +22,17 @@ let
     HOME = cfg.package;
   };
 
-  systemCallsList = [
-    "@cpu-emulation"
-    "@debug"
-    "@keyring"
-    "@ipc"
-    "@memlock"
-    "@mount"
-    "@obsolete"
-    "@privileged"
-    "@setuid"
-  ];
+  #systemCallsList = [
+  #  "@cpu-emulation"
+  #  "@debug"
+  #  "@keyring"
+  #  "@ipc"
+  #  "@memlock"
+  #  "@mount"
+  #  "@obsolete"
+  #  "@privileged"
+  #  "@setuid"
+  #];
 
   cfgService = {
     # Proc filesystem
